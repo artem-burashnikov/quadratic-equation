@@ -3,7 +3,7 @@
 
 /* Possible number of roots of a quadratic equation. */
 enum roots_count {
-    ROOTS_INF  = -1,
+    ROOTS_INF = -1,
     ROOTS_ZERO = 0,
     ROOTS_ONE = 1,
     ROOTS_TWO = 2
@@ -20,10 +20,9 @@ struct quadratic_equation {
     float roots[];
 };
 
-/* Free a memory allocated for quadratic equation structure. */
-void free_equation(struct quadratic_equation *equation);
-
 /* Solve ax^2 + bx + c = 0 given coefficients a, b, c. */
-struct quadratic_equation *solve_equation(const float a, const float, const float c);
+struct quadratic_equation* solve_equation(const float a,
+                                          const float b,
+                                          const float c);
 
 #endif /* __QUADRATIC_EQUATION_H__ */
