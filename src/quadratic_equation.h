@@ -11,18 +11,18 @@ enum roots_count {
 
 struct quadratic_equation {
     /* Real coefficients of the quadratic polynomial. */
-    float a;
-    float b;
-    float c;
+    double a;
+    double b;
+    double c;
     /* Length of the roots array. */
     enum roots_count roots_count;
     /* Flexible array member containing roots values. */
-    float roots[];
+    double roots[];
 };
 
 /* Solve ax^2 + bx + c = 0 given coefficients a, b, c. */
-struct quadratic_equation* solve_equation(const float a,
-                                          const float b,
-                                          const float c);
+struct quadratic_equation* solve_equation(const double a,
+                                          const double b,
+                                          const double c);
 
 #endif /* __QUADRATIC_EQUATION_H__ */
