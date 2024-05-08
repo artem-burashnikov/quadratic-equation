@@ -13,7 +13,7 @@ add_custom_target(format COMMAND clang-format -style='{BasedOnStyle: Chromium, I
 
 # Add Valgrind memory check
 add_custom_target(memcheck
-COMMAND valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./quadratic_equation_tests DEPENDS quadratic_equation_tests)
+COMMAND valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./tests/quadratic_equation_tests DEPENDS quadratic_equation_tests)
 
 target_include_directories(quadratic_equation_tests PUBLIC tests)
 
