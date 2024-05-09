@@ -51,12 +51,12 @@ Below is an example how you can utilize this library.
 struct quadratic_equation* equation = solve_equation(0.16, -0.53, -0.2);
 
 /* Print initial coefficients */
-printf("a: %.2f\n", a);
-printf("b: %.2f\n", b);
-printf("c: %.2f\n", c);
+printf("a: %.2f\n", equation->a);
+printf("b: %.2f\n", equation->b);
+printf("c: %.2f\n", equation->c);
 
 /* Print roots if any. */
-for (size_t i = 0; (equation->roots_count != ROOTS_INF) && (i < equation->roots_count); i++) {
+for (size_t i = 0; i < equation->roots_count; i++) {
     printf("root-%zu: %.2f\n", i, equation->roots[i]);
 }
 
@@ -64,16 +64,7 @@ for (size_t i = 0; (equation->roots_count != ROOTS_INF) && (i < equation->roots_
 free(equation);
 ```
 
-`roots_count` &mdash; is delcared in a header and it is the enumerator type that specifies the number of roots.
-
-```c
-enum roots_count {
-    ROOTS_INF = -1,
-    ROOTS_ZERO = 0,
-    ROOTS_ONE = 1,
-    ROOTS_TWO = 2
-};
-```
+Defined abstractions are exposed in a header.
 
 ## Licenses
 
