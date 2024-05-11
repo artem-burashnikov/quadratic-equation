@@ -11,7 +11,6 @@ static struct quadratic_equation* init_equation(const double a,
                                                 const double b,
                                                 const double c,
                                                 const enum roots_count count) {
-    size_t extra;
     struct quadratic_equation* equation;
 
     /* Allocate neccesary size for struct
