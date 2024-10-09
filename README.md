@@ -11,7 +11,7 @@ The repository provides a C library that calculates roots of a guadratic equatio
 
 ### Prerequisites
 
-- CMake (version 3.10 or higher)
+- GNU Make (version 4.4.1 or higher)
 - gcc
 
 ### Building
@@ -24,19 +24,13 @@ Open the terminal and follow these steps:
     git clone git@github.com:artem-burashnikov/quadratic-equation.git
     ```
 
-2. Navigate to the project root:
-
-    ```sh
-    cd quadratic-equation
-    ```
-
-3. Build a testing executable:
+2. Build a testing executable:
 
     ```sh
     cd quadratic-equation && make
     ```
 
-5. Now you can link `quadratic_equation.o` during a compilation.
+3. Now you can link `quadratic_equation.o` during a compilation.
 
 ## Usage
 Below is an example how you can utilize this library.
