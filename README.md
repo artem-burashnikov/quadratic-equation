@@ -30,16 +30,13 @@ Open the terminal and follow these steps:
     cd quadratic-equation
     ```
 
-3. Build a static library:
+3. Build a testing executable:
 
     ```sh
-    mkdir build &&
-    cd build &&
-    cmake .. &&
-    make
+    cd quadratic-equation && make
     ```
 
-5. Now you can include a `quadratic_equation.h` header file in your source files and link a static library `libquadratic_equation.a` during a compilation.
+5. Now you can link `quadratic_equation.o` during a compilation.
 
 ## Usage
 Below is an example how you can utilize this library.
