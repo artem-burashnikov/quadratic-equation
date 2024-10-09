@@ -3,7 +3,7 @@
 
 /* Possible number of roots of a quadratic equation. */
 enum roots_count {
-    ROOTS_INF = -1,
+    ROOTS_INF = 0,
     ROOTS_ZERO = 0,
     ROOTS_ONE = 1,
     ROOTS_TWO = 2
